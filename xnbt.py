@@ -113,13 +113,14 @@ class XNBT:
 		elif self.__mode[2] == "r":
 			lenght = len(data);
 
-		if data[0] != 10 or data[-1] != 0:
-			raise NBTParsingError("invalid file.");
-
 		if self.__mode[1] == "z":
 			data = zlib.decompress(data[:lenght]);
 		elif self.__mode[1] == "g":
 			data = gzip.decompress(data[:lenght]);
+
+		if data[0] != 10 or data[-1] != 0:
+			raise NBTParsingError("invalid file.");
+
 		return self.__parse_tag(data)[0];
 
 	def build(self, tag):
