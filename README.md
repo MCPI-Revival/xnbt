@@ -67,7 +67,7 @@ A mode is a combination of the following characters:
 For an example, a `xnbt.XNBT(mode="bgo")` class manipulates the data as a big-endian, GZip-compressed `level.dat` file.
 
 ## Licensing
-All the code of this project is licensed under the [GNU General Public License version 2.0](https://github.com/Alvarito050506/MCPIL/blob/master/LICENSE) (GPL-2.0).
+All the code of this project is licensed under the [GNU General Public License version 2.0](https://github.com/MCPI-Devs/xnbt/blob/master/LICENSE) (GPL-2.0).
 
 All the documentation of this project is licensed under the [Creative Commons Attribution-ShareAlike 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/) (CC BY-SA 4.0) license.
 
